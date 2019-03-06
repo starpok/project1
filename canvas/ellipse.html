@@ -1,0 +1,20 @@
+<canvas id="canvas" width="200" height="200"></canvas>
+<script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.shadowColor = 'red';
+    ctx.shadowBlur = 5;
+
+    ctx.beginPath();
+    ctx.ellipse(100, 100, 50, 75, Math.PI / 4, 0, 2 * Math.PI);
+    ctx.stroke();
+    
+
+    ctx.beginPath();
+    ctx.setLineDash([5, 5]);
+    ctx.moveTo(0, 200);
+    ctx.lineTo(200, 0);
+    ctx.stroke();
+      
+</script>
