@@ -1,0 +1,44 @@
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+
+function solvepy(form) {
+xa = parseFloat(form.Xa.value);
+ya = parseFloat(form.Ya.value);
+
+xb = parseFloat(form.Xb.value);
+yb = parseFloat(form.Yb.value);
+//form.AB.value = Math.sqrt(Math.pow((xb-xa),2)+Math.pow((yb-ya),2));
+form.AB.value = Math.sqrt( (xb-xa)**2+(yb-ya)**2 );
+
+
+}
+</script>
+
+</head>
+</head>
+<body>
+<form>
+    <center>
+    The Pythagorean Theorem
+    <p>
+        <input type="text"  name=Xa size="3">Xa
+        <input type="text"  name=Ya size="3">Ya
+        <br>
+        <input type="text" name=Xb size="3">Xb
+        <input type="text" name=Yb size="3">Yb
+        <br>
+        <input type="text" name=AB size="3">AB
+        <input type=button value="Solve" onClick="solvepy(this.form)">
+        <!--
+    <tt>( a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> )</tt>
+    <p>
+        <input type=text name=a size=3><sup>2</sup> +
+        <input type=text name=b size=3><sup>2</sup> =
+        <input type=text name=c size=8>
+    <p>
+    <input type=button value="Solve" onClick="solvepy(this.form)">
+    -->
+
+</form>
+    </center>
+</body>
